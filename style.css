@@ -29,7 +29,7 @@ header{
 }
 
 .navHeader{
-    background: #333333b7;
+    background: #333333ab;
     border-radius: 50px;
     margin-top: 2%;
     padding: 1%;
@@ -184,6 +184,101 @@ figure figcaption{
 .two, .three {
     width: 40%;
 } 
+
+.destinations{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0% 15%;
+}
+
+.destination_card{
+    width: 30%;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--noir);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.destination_card_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination_card_top div{
+    padding: 2%;
+    margin: 5%;
+    background: #333333ab;
+    border-radius: 20px;
+}
+
+.note{
+    display: flex;
+}
+
+.destination_card_bottom{
+    background: #333333ab;
+    border-radius: 20px;
+    margin: 5% 2%;
+}
+
+.destination_card_bottom div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.date{
+    color: var(--light-grey);
+    font-size: 70%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.price{
+    font-size: 120%;
+}
+
+#destination_card_one{
+    background: url(./assets/images/jogjakarta.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#destination_card_two{
+    background: url(./assets/images/waterfalls.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#destination_card_three{
+    background: url(./assets/images/solo-tour-pack.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bouton{
+    width: 70%;
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.bouton button{
+    width: 15%;
+    padding: 1% 0%;
+    border-radius: 50px;
+    border: none;
+    background: var(--noir);
+    color: var(--white);
+}
+
+
+
+footer{
+    margin-top: 10%;
+}
+
 
 
 
