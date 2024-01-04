@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --noir: #0A0A0A;
+    --light-grey: #C8C8C8;
+    --white:#F8F8FA;
+    --grey: #333333;
+    --yellow: #FFD700;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    background: url(./assets/images/mountains-1587287_1280.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navHeader{
+    background: #333333b7;
+    border-radius: 50px;
+    margin-top: 2%;
+    padding: 1%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navHeader a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.title{
+    margin-top: 10%;
+    text-align: center;
+    color: var(--white);
+}
+
+article{
+    position: absolute;
+    width: 100%;
+    z-index: +5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+
+
