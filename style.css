@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap');
 
 :root{
     --noir: #0A0A0A;
@@ -15,6 +15,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -42,6 +43,10 @@ header{
     justify-content: space-around;
 }
 
+.navHeader:hover{
+    background: var(--grey);
+}
+
 .navHeader a{
     color: var(--white);
     text-decoration: none;
@@ -57,8 +62,15 @@ header{
     color: var(--white);
 }
 
+h1{
+    font-size: 300%;
+    font-weight: 400;
+}
+
 h2{
     padding-top: 10%;
+    font-size: 160%;
+    font-weight: 100;
 }
 
 
@@ -77,6 +89,7 @@ article{
     display: flex;
     justify-content: space-between;
     padding: 0% 15%;
+    animation: moveleft 1s ease-out 0.1s;
 }
 
 .card{
@@ -100,6 +113,10 @@ article{
     color: var(--light-grey);
 }
 
+@keyframes moveleft {
+    from{left : 100%}
+    to{left: 0%}
+}
 
 
 
@@ -118,6 +135,8 @@ article{
 h3{
     color: var(--light-grey);
     padding-bottom: 2%;
+    font-size: 90%;
+    font-weight: 400;
 }
 
 .main_section_soustitre{
@@ -127,10 +146,14 @@ h3{
 
 h4{
     color: var(--noir);
+    font-size: 200%;
+    font-weight: 400;
 }
 
 h6{
     color: var(--light-grey);
+    font-size: 90%;
+    font-weight: 300;
 }
 
 .grid{
@@ -157,6 +180,22 @@ figure{
     box-shadow: 1px 1px 10px var(--noir);
     display: flex;
     align-items: end;
+}
+
+.two:hover, .three:hover, .one:hover, .four:hover{
+    width: 60%;
+}
+.two:hover ~ .one{
+    width: 38%;
+}
+.three:hover ~ .four{
+    width: 38%;
+}
+.one:hover ~ .two{
+    width: 38%;
+}
+.four:hover ~ .three{
+    width: 38%;
 }
 
 .one{
@@ -187,10 +226,12 @@ figure figcaption{
 }
 
 .one, .four {
-    width: 58%;
+    width: 48%;
+    transition: width 1s ease-out;
 }
 .two, .three {
-    width: 40%;
+    width: 48%;
+    transition: width 1s ease-out;
 } 
 
 .destinations{
@@ -254,19 +295,27 @@ figure figcaption{
     font-size: 120%;
 }
 
+#destination_card_one:hover, #destination_card_two:hover, #destination_card_three:hover{
+    width: 35%;
+    height: 450px;
+}
+
 #destination_card_one{
     background: url(./assets/images/jogjakarta.jpg) no-repeat center;
     background-size: cover;
+    transition: all 1s ease-out;
 }
 
 #destination_card_two{
     background: url(./assets/images/waterfalls.jpg) no-repeat center;
     background-size: cover;
+    transition: all 1s ease-out;
 }
 
 #destination_card_three{
     background: url(./assets/images/solo-tour-pack.jpg) no-repeat center;
     background-size: cover;
+    transition: all 1s ease-out;
 }
 
 .bouton{
@@ -283,6 +332,10 @@ figure figcaption{
     border: none;
     background: var(--noir);
     color: var(--white);
+}
+
+.bouton button:hover{
+    background: var(--grey);
 }
 
 
@@ -333,6 +386,11 @@ footer nav div a{
     color: var(--light-grey);
 }
 
+footer nav div a:hover{
+    font-size: 86%;
+    font-weight: 700;
+}
+
 .mail{
     display: flex;
     align-items: center;
@@ -350,6 +408,10 @@ footer nav div a{
     border: none;
     margin-right: 2%;
     height: 25px;
+}
+
+.mail button:hover{
+    background: var(--light-grey);
 }
 
 label {
