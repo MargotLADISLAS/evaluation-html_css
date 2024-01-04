@@ -491,18 +491,13 @@ input{
         height: 600px;
     }
 
-    .main_section{
-        overflow-x: scroll;
-    }
-
-    .main_section_title, .flèches{
-        overflow-x: hidden;
+    .overflow{
+        overflow-x: auto;
     }
 
     .destinations{
         width: 900px;
         height: 420px;
-        overflow-x: scroll;
     }
     .destination_card{
         margin-top: 1%;
