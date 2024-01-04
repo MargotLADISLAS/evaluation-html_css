@@ -28,6 +28,10 @@ header{
     align-items: center;
 }
 
+.burger{
+    display: none;
+}
+
 .navHeader{
     background: #333333ab;
     border-radius: 50px;
@@ -41,6 +45,10 @@ header{
 .navHeader a{
     color: var(--white);
     text-decoration: none;
+}
+
+.navHeader a:hover {
+    font-size: 120%;
 }
 
 .title{
@@ -192,6 +200,10 @@ figure figcaption{
     padding: 0% 15%;
 }
 
+.flèches{
+    display: none;
+}
+
 .destination_card{
     width: 30%;
     height: 400px;
@@ -276,7 +288,7 @@ figure figcaption{
 
 
 footer{
-    margin-top: 10%;
+    margin-top: 2%;
     background: var(--noir);
     width: 70%;
     height: 350px;
@@ -304,6 +316,7 @@ footer nav{
 .newsletter .description{
     font-size: 78%;
     padding: 5% 0%;
+    width: 80%;
     color: var(--light-grey);
 }
 
@@ -359,7 +372,112 @@ input{
 }
 
 
+@media screen and (max-width: 700px){
+    .navHeader a{
+        display: none;
+    }
+    .burger{
+        display: block;
+        color: var(--white);
+    }
+    .navHeader{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin-top: 6%;
+        width: 12%;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+        font-size: 200%
+    }
+    header{
+        display: block;
+        height: 700px;
+    }
+    .title{
+        margin: 0;
+        padding-top: 24%;
+    }
+    h2{
+        padding-top: 2%;
+    }
 
+    article{
+        flex-direction: column;
+        top: 240px;
+        height: 400px;
+        align-items: center;
+    }
+    .card{
+        width: 70%;
+    }
+
+    .main_section_soustitre{
+        flex-direction: column;
+    }
+    .column{
+        flex-direction: column;
+        height: 300px;
+    }
+    figure, .one, .two, .three, .four{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+    .grid{
+        height: 600px;
+    }
+
+    .main_section{
+        overflow-x: scroll;
+    }
+
+    .main_section_title, .flèches{
+        overflow-x: hidden;
+    }
+
+    .destinations{
+        width: 900px;
+        height: 420px;
+        overflow-x: scroll;
+    }
+    .destination_card{
+        margin-top: 1%;
+    }
+    .flèches{
+        display: flex;
+        width: 70%;
+        padding: 0% 15%;
+        justify-content: end;
+    }
+    .flèches svg{
+        padding-right: 8%;
+        padding-bottom: 2%;
+    }
+
+    .bouton button{
+        width: 50%;
+        font-size: 120%;
+        padding: 4%;
+    }
+    footer{
+        height: 600px;
+    }
+    .footer_flex{
+        flex-direction: column-reverse;
+    }
+    footer nav, .newsletter{
+        width: 90%;
+        padding: 8% 5%;
+    }
+    footer nav{
+        height: 300px;
+    }
+    .mail{
+        width: 100%;
+    }
+}
 
 
 
