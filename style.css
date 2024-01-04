@@ -277,6 +277,85 @@ figure figcaption{
 
 footer{
     margin-top: 10%;
+    background: var(--noir);
+    width: 70%;
+    height: 350px;
+    color: var(--white);
+    padding: 0% 15%;
+}
+
+.footer_flex{
+    display: flex;
+    width: 100%;
+}
+
+footer nav{
+    display: flex;
+    padding-top: 5%;
+    width: 50%;
+    height: 220px;
+}
+
+.newsletter{
+    width: 50%;
+    padding-top: 5%;
+}
+
+.newsletter .description{
+    font-size: 78%;
+    padding: 5% 0%;
+    color: var(--light-grey);
+}
+
+footer nav div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+    justify-content: space-between;
+}
+
+footer nav div a{
+    text-decoration: none;
+    font-size: 78%;
+    color: var(--light-grey);
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--white);
+    width: 70%;
+    border-radius: 50px;
+}
+
+.mail button{
+    border-radius: 50px;
+    width: 30%;
+    background: var(--white);
+    color: var(--noir);
+    border: none;
+    margin-right: 2%;
+    height: 25px;
+}
+
+label {
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+input{
+    margin: 2%;
+    width: 60%;
+    background: var(--noir);
+    border: none;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 70%;
 }
 
 
